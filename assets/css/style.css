@@ -1355,11 +1355,11 @@ div.package.package-2748596 {
 }
 
 #footer-socials a:hover>.fa-instagram {
-    color: #405de6;
+    color: #C13584;
 }
 
 #footer-socials a:hover>.fa-tiktok {
-    color: #000;
+    color: #ff0050;
 }
 
 #footer-socials a:hover>.fa-twitter {
@@ -2614,6 +2614,73 @@ fieldset[disabled] .btn-primary.active {
 .module .featured-package .info .text .name {
     margin: 0;
     text-align: center;
+}
+
+.a-btn:hover {
+    text-decoration: none;
+}
+
+button {
+    position: relative;
+    height: 50px;
+    width: 250px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    border: 1px solid #c00fc0;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border: 1px solid #c00fc0;
+    top: -4px;
+    left: 245px;
+    transition: 1s all;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border: 1px solid #c00fc0;
+    bottom: -4px;
+    left: -4px;
+    transition: 1s all;
+}
+
+
+button:hover::after {
+    text-decoration: none;
+    animation: anime 1.5s infinite alternate;
+    left: 245px;
+}
+
+button:hover::before {
+    animation: anime 1.5s infinite alternate;
+    left: -4px;
+    
+}
+
+@keyframes anime {
+    from {
+        transform: scale(1);
+        border-color: #c00fc0;
+    }
+    to {
+        transform: scale(1.5);
+        border-color: #791579;
+    }
 }
 
 .nav .dropdown-menu li>a,
